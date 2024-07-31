@@ -2,8 +2,7 @@ use core::cmp;
 use core::u16;
 use core::u8;
 use io;
-use io::prelude::*;
-use io::{Error, ErrorKind};
+use io::{Read, Write, Error, ErrorKind};
 
 use byteorder::LittleEndian;
 use byteorder_ext::{ReadBytesExt, WriteBytesExt};

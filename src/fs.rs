@@ -7,8 +7,7 @@ use core::fmt::Debug;
 use core::iter::FromIterator;
 use core::u32;
 use io;
-use io::prelude::*;
-use io::{Error, ErrorKind, SeekFrom};
+use io::{Read, Write, Seek, Error, ErrorKind, SeekFrom};
 
 use byteorder::LittleEndian;
 use byteorder_ext::{ReadBytesExt, WriteBytesExt};
