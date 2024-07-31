@@ -1,8 +1,7 @@
 use core;
 use core::cmp;
 use io;
-use io::prelude::*;
-use io::{ErrorKind, SeekFrom};
+use io::{Read, Write, Seek, ErrorKind, SeekFrom};
 
 use dir_entry::DirEntryEditor;
 use fs::{FileSystem, ReadWriteSeek};

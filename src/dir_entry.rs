@@ -4,7 +4,7 @@ use core::char;
 use core::iter::FromIterator;
 use core::{fmt, str};
 use io;
-use io::prelude::*;
+use io::{Read, Write};
 use io::Cursor;
 
 use byteorder::LittleEndian;

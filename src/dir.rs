@@ -4,8 +4,7 @@ use core::{char, cmp, num, str};
 #[cfg(feature = "alloc")]
 use core::{iter, slice};
 use io;
-use io::prelude::*;
-use io::{ErrorKind, SeekFrom};
+use io::{Read, Write, Seek, ErrorKind, SeekFrom};
 
 use dir_entry::{DirEntry, DirEntryData, DirFileEntryData, DirLfnEntryData, FileAttributes, ShortName, DIR_ENTRY_SIZE};
 #[cfg(feature = "alloc")]

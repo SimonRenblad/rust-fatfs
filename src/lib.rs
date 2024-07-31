@@ -77,7 +77,7 @@ extern crate log;
 extern crate chrono;
 
 #[cfg(not(feature = "std"))]
-extern crate core_io;
+extern crate core2;
 
 #[cfg(all(not(feature = "std"), feature = "alloc"))]
 extern crate alloc;
@@ -98,7 +98,7 @@ use byteorder as byteorder_ext;
 #[cfg(not(feature = "std"))]
 use byteorder_core_io as byteorder_ext;
 #[cfg(not(feature = "std"))]
-use core_io as io;
+use core2::io as io;
 #[cfg(feature = "std")]
 use std as core;
 
