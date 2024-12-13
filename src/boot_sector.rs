@@ -851,7 +851,6 @@ mod tests {
 
     #[test]
     fn test_determine_sectors_per_fat() {
-        let _ = env_logger::try_init();
 
         test_determine_sectors_per_fat_for_multiple_sizes(512, FatType::Fat12, 1, 2, 512);
         test_determine_sectors_per_fat_for_multiple_sizes(512, FatType::Fat12, 1, 1, 512);
@@ -870,7 +869,6 @@ mod tests {
 
     #[test]
     fn test_format_boot_sector() {
-        let _ = env_logger::try_init();
         let bytes_per_sector = 512u16;
         // test all partition sizes from 1MB to 2TB (u32::MAX sectors is 2TB - 1 for 512 byte sectors)
         let mut total_sectors_vec = Vec::new();
